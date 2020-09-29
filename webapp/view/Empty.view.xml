@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="infy.fin.ap.controller.Empty">
+	<App>
+		<pages>
+			<Page title="Empty View">
+				<content>
+				    <Text text="Please select an item on left side in the master list" id="__text0"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

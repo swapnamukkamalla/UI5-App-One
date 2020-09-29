@@ -1,0 +1,55 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="infy.fin.ap.controller.View1">
+	<Page title="View 1">
+		<content>
+			<!--<Button text="next" press="onNext"></Button>-->
+			<SearchField width="100%" placeholder="Search" id="idSearch" search="onSearch"/>
+			<List items="{/fruits}" id="idList" mode="SingleSelectMaster" 
+				  delete="onDelete" selectionChange="onSelectedItem">
+				<!--<headerToolbar>-->
+				<!--	<Toolbar>-->
+				<!--		<ToolbarSpacer />-->
+				<!--		<Button icon="sap-icon://refresh" tooltip="anubhav check this out"-->
+				<!--				press="onClick"></Button>-->
+				<!--	</Toolbar>-->
+				<!--</headerToolbar>-->
+				<items>
+					<ObjectListItem title="{name}" intro="{type}" number="{price}" numberUnit="{currency}"
+									icon="{imageURL}"
+					></ObjectListItem>
+				<!--	<DisplayListItem label="Apple" value="The best antibody"></DisplayListItem>
+					<StandardListItem icon="https://c.ndtvimg.com/2019-04/dl9g6gn8_bananas_625x300_11_April_19.jpg" title="Banana" description="Powerhouse of potassium"></StandardListItem>
+					<InputListItem>
+						<content>
+							<HBox>
+								<Label class="sapUiSmallMarginTop sapUiMediumMarginEnd" text="Pineapple"></Label>
+								<Input></Input>
+							</HBox>
+						</content>
+					</InputListItem>
+					<ObjectListItem intro="Purifies the blood" title="Mango" icon="https://www.thespruceeats.com/thmb/_i6XSGjRXDBhOaQ4gqpfi7dbaIk=/4486x2523/smart/filters:no_upscale()/mango-at-the-market-506813675-587e60f53df78c17b6967f5e.jpg"
+					number="150 INR" numberUnit="Per Kg.">
+					</ObjectListItem>
+					<CustomListItem>
+						<content>
+							<HBox>
+								<Title class="sapUiSmallMarginTop sapUiMediumMarginEnd" text="would you like home delivery from our store?"></Title>
+								<Switch></Switch>
+							</HBox>
+						</content>
+					</CustomListItem>
+					<FeedListItem icon="https://thehill.com/sites/default/files/styles/article_full/public/trumpdonaldsmile_123016getty9.jpg?itok=iFy6hQBQ"
+					info="From NY Times" text="Hey Anubhav! Howdi Modi?" sender="Donald Trumph" timestamp="July 2nd 2020">
+						
+					</FeedListItem>
+					<ActionListItem text="Order Now!!"></ActionListItem>-->
+				</items>
+			</List>
+		</content>
+		<headerContent>
+			<Button icon="sap-icon://action" press="onNext"/>
+		</headerContent>
+		<footer>
+			<Toolbar></Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

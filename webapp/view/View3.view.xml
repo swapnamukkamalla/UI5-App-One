@@ -1,0 +1,8 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="infy.fin.ap.controller.View3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" showNavButton="true" navButtonPress="onBack">
+		<content>
+			<Text text="Welcome to Level 3 "></Text>
+		</content>
+	</Page>
+</mvc:View>

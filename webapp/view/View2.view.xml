@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="infy.fin.ap.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<Page title="View 2" showNavButton="true" navButtonPress="onBack">
+		<content>
+			<ObjectHeader title="{name}" intro="{healthBenefit}" 
+						  number="{price}" numberUnit="{currency}" icon="{imageURL}"></ObjectHeader>
+			<IconTabBar>
+				<items>
+					<IconTabFilter text="More Data" 
+					key="MD" icon="sap-icon://add-contact" count="3">
+						<core:Fragment fragmentName="infy.fin.ap.fragements.additionalInfo" type="XML"></core:Fragment>
+					</IconTabFilter>
+					<IconTabFilter text="Suppliers"
+					key="SP" icon="sap-icon://supplier">
+						<core:Fragment fragmentName="infy.fin.ap.fragements.suppTable" type="XML"></core:Fragment>
+					</IconTabFilter>
+					<IconTabFilter text="Cities" key="CT"
+					icon="sap-icon://functional-location">
+						<core:Fragment fragmentName="infy.fin.ap.fragements.ddls" type="XML" />
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button text="Approve" press="onApprove" type="Accept"></Button>
+				<Button text="Reject"  type="Reject"></Button>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
